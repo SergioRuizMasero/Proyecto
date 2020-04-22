@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de registro</title>
+    <title>Página de productos</title>
 
     <link rel="stylesheet" type="text/css" href="estilos.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -14,8 +14,8 @@
 </head>
 <body>
 
-     <!-- Header -->
-     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -24,7 +24,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent" style="border: 0px solid black;">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="productos.html">Productos</a>
@@ -47,34 +47,27 @@
               </li>
   
       </ul>
-    </ul>
+      </ul> 
     </div>
-    </nav>
 
-   
-      <!--Formulario-->
-      
+        <form class="form-inline my-2 my-lg-0" style="width: 40%; border: 0px solid black;">
+          <a href="Login.html" class="nav-link" href="#" style="width: 100px; color: #9a9da0;" data-toggle="modal" data-target="#exampleModal">Identifícate</a>
+            <a class="nav-link" href="cesta.html" style="margin-left: 30px; color: #9a9da0;">Cesta</a>
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="width: 170px;">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </nav>
 
-    <form class="form-signin" style="width: 30%; margin: auto; margin-top: 2%; border: 0px solid black;">
-        <h1 class="h3 mb-3 font-weight-normal">Registrate</h1>
-        <label for="inputNombre">Nombre*</label>
-        <input type="text" id="inputNombre" class="form-control" required autofocus>
-        <label for="inputApellidos">Apellidos*</label>
-        <input type="text" id="inputApellidos" class="form-control" required autofocus>
-        <label for="inputDNI">DNI*</label>
-        <input type="text" id="inputDNI" class="form-control" required autofocus>
-        <label for="inputEmail">Email address*</label>
-        <input type="email" id="inputEmail" class="form-control" required autofocus>
-        <label for="inputPassword">Password*</label>
-        <input type="password" id="inputPassword" class="form-control" required>
-        <label for="repitePassword">Confirmar Password*</label>
-        <input type="password" id="repitePassword" class="form-control" required>
-        <button class="btn btn-lg btn-primary btn-block" type="submit" style="margin: 5%; margin-left: 0%;">Registrarse</button>
-    </form>
-
+<!--Productos-->
+    <div class="container">
+        <div class="row">
+            <!-- Elementos generados a partir del JSON -->
+            <main id="items" class="col-sm-8 row"></main>
+        </div>
+    </div>
 
     <!-- Footer -->
-      <section id="footer">
+    <section id="footer">
 		<div class="container">
 			<div class="row text-center text-xs-center text-sm-left text-md-left">
 				<div class="col-xs-12 col-sm-4 col-md-4">
@@ -129,6 +122,47 @@
 			</div>	
 		</div>
   </section>
+
+
+  <!-- Modal Login-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        
+        <div class="modal-body" style="width: 100%; border: 0px solid black;">
+          <div style="width: 100%; margin-left: auto; margin-right: auto;">
+            <form class="form-signin">
+              <img class="mb-4" src="../../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+              <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+              <label for="inputEmail" class="sr-only">Email address</label>
+              <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+              <label for="inputPassword" class="sr-only">Password</label>
+              <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+              <div class="checkbox mb-3">
+                <label>
+                  <input type="checkbox" value="remember-me"> Remember me
+                </label>
+              </div>
+              <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+              
+              <p>¿Aún no tienes cuenta?<a href="registro.html"> Registrate.</a></p>
+            
+            </form>
+        </div>
+        </div>
+        <div class="modal-footer">
+          
+        </div>
+      </div>
+    </div>
+  </div>
     
+    <script src="js/cesta.js"></script>
 </body>
 </html>
