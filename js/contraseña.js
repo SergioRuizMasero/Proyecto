@@ -32,16 +32,20 @@ $(document).ready(function() {
             $('#number').removeClass('valid').addClass('invalid');
         }
 
-     //validate all
+     //Color contraseña
      if ( pswd.match(/\d/) && pswd.match(/[A-Z]/) && pswd.match(/[A-z]/)) {
         
         if (pswd.length >= 8){
+
             var a=document.getElementsByClassName("color");
             a[0].style.backgroundColor="#34eb7a";
+            document.getElementById('check').style.display = 'block';
+                
 
         } else {
             var a=document.getElementsByClassName("color");
             a[0].style.backgroundColor="red";
+            document.getElementById('check').style.display = 'none';
         }
 
     }else {
@@ -51,6 +55,8 @@ $(document).ready(function() {
     }
 
 
+   
+
 
     }).focus(function() {
         $('#pswd_info').show();
@@ -59,3 +65,5 @@ $(document).ready(function() {
     });
 
 });
+
+
