@@ -20,6 +20,28 @@
     background-color: #555;
   }
 
+  /*Seguridad contraseña*/
+
+  .valid {
+
+    color: green;
+  }
+
+  .invalid {
+
+    color: red;
+  }
+
+  .contenedor {
+    background-color: white;
+    border: 0.5px solid black;
+    padding: 5%;
+    display:none;
+
+  }
+
+
+
 /* Footer */
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 section {
