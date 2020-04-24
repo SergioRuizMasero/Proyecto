@@ -32,6 +32,26 @@ $(document).ready(function() {
             $('#number').removeClass('valid').addClass('invalid');
         }
 
+     //validate all
+     if ( pswd.match(/\d/) && pswd.match(/[A-Z]/) && pswd.match(/[A-z]/)) {
+        
+        if (pswd.length >= 8){
+            var a=document.getElementsByClassName("color");
+            a[0].style.backgroundColor="#34eb7a";
+
+        } else {
+            var a=document.getElementsByClassName("color");
+            a[0].style.backgroundColor="red";
+        }
+
+    }else {
+
+        var a=document.getElementsByClassName("color");
+            a[0].style.backgroundColor="red";
+    }
+
+
+
     }).focus(function() {
         $('#pswd_info').show();
     }).blur(function() {
