@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
 
-    $('input[type=password]').keyup(function() {
+    $('input[id=pswd]').keyup(function() {
         // set password variable
         var pswd = $(this).val();
         //validate the length
