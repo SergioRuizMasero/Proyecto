@@ -47,10 +47,12 @@ $(document).ready(function() {
                 
 
         } else {
+
             var a=document.getElementsByClassName("color");
             a[0].style.backgroundColor="#fa2d48";
             document.getElementById('check').style.display = 'none';
             $('#pswd_info').show();
+
         }
 
     }else {
@@ -62,10 +64,6 @@ $(document).ready(function() {
 
     
     
-
-
-   
-
 
     }).focus(function() {
         $('#pswd_info').show();

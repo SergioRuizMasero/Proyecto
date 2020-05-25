@@ -55,7 +55,7 @@ section {
 
 section .section-title {
     text-align: center;
-    color: #343a40;
+    color: white;
     margin-bottom: 50px;
     text-transform: uppercase;
 }
@@ -64,13 +64,13 @@ section .section-title {
 }
 #footer h5{
 	padding-left: 10px;
-    border-left: 3px solid #eeeeee;
+    border-left: 3px solid #343a40;
     padding-bottom: 6px;
     margin-bottom: 20px;
-    color:#ffffff;
+    color:white;
 }
 #footer a {
-    color: #ffffff;
+    color: white;
     text-decoration: none !important;
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
@@ -91,10 +91,10 @@ section .section-title {
 }
 #footer ul.social li a,
 #footer ul.quick-links li a{
-	color:#ffffff;
+	color:white;
 }
 #footer ul.social li a:hover{
-	color:#eeeeee;
+	color:white;
 }
 #footer ul.quick-links li{
 	padding: 3px 0;
