@@ -4,27 +4,39 @@
             let baseDeDatos = [
                 {
                     id: 1,
-                    nombre: 'Patata',
-                    precio: 1,
-                    imagen: 'https://source.unsplash.com/random/500x500/?potato&sig=1'
+                    nombre: 'Gigabyte B450M DS3H',
+                    precio: 72.99,
+                    imagen: 'https://thumb.pccomponentes.com/w-530-530/articles/16/168112/a1.jpg'
                 },
                 {
                     id: 2,
-                    nombre: 'Cebolla',
-                    precio: 1.2,
-                    imagen: 'https://source.unsplash.com/random/500x500/?onion&sig=2'
+                    nombre: 'Asus Dual GeForce RTX 2080 EVO OC 8GB GDDR6',
+                    precio: 649.89,
+                    imagen: 'https://thumb.pccomponentes.com/w-530-530/articles/20/208043/1.jpg'
                 },
                 {
                     id: 3,
-                    nombre: 'Calabacin',
-                    precio: 2.1,
-                    imagen: 'https://source.unsplash.com/random/500x500/?zucchini&sig=3'
+                    nombre: 'Toshiba OCZ TR200 SSD 480GB SATA3',
+                    precio: 79.99,
+                    imagen: 'https://thumb.pccomponentes.com/w-530-530/articles/15/150821/1.jpg'
                 },
                 {
                     id: 4,
-                    nombre: 'Fresas',
-                    precio: 0.6,
-                    imagen: 'https://source.unsplash.com/random/500x500/?burrs&sig=4'
+                    nombre: 'Corsair Vengeance RGB Pro Optimizado AMD DDR4 3200 16GB 2x8GB CL16',
+                    precio: 129,
+                    imagen: 'https://thumb.pccomponentes.com/w-530-530/articles/27/279642/corsair-vengeance-rgb-pro-optimizado-amd-ddr4-3200-16gb-2x8gb-cl16-opiniones.jpg'
+                },
+                {
+                    id: 5,
+                    nombre: 'Intel Core i7-9700K 3.6Ghz',
+                    precio: 379.90,
+                    imagen: 'https://thumb.pccomponentes.com/w-530-530/articles/17/173598/1539027947000-1435918.jpg'
+                },
+                {
+                    id: 6,
+                    nombre: 'Corsair H100i RGB PLATINUM Kit de Refrigeración Líquida',
+                    precio: 134.99,
+                    imagen: 'https://thumb.pccomponentes.com/w-530-530/articles/17/175533/h100i-rgb-platinum-01.jpg'
                 }
 
             ]
